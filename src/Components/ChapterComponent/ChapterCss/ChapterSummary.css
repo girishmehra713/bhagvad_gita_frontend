@@ -1,0 +1,97 @@
+.mainChapSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.mainChapHeader {
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: chocolate;
+}
+
+.mainChapTitle {
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px 0px;
+}
+
+.mainChapSummary {
+
+  width: 80%;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+
+.VerseSection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 100px;
+}
+
+.VerseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0px;
+  border-bottom: 1px solid rgb(233, 233, 233);
+  border-top: 1px solid rgb(233, 233, 233);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 40px;
+}
+
+.VerseInput {
+  padding: 10px 30px;
+  outline: none;
+  border: 1px solid grey;
+  /* border-radius: 10px; */
+}
+
+.sortVerse {
+  padding: 10px 30px;
+  outline: none;
+  border: 1px solid grey;
+  /* border-radius: 10px; */
+}
+
+.VerseSpan {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.verseNumberandDetails {
+  display: flex;
+  padding: 30px 10px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.verseNumberandDetails:hover {
+  background-color: #FFFAEC;
+  box-shadow: 0px 2px 10px #ffdcbb;
+}
+
+.verseNumber {
+  margin-right: 150px;
+  color: chocolate;
+  font-size: 18px;
+}
+
+.verseId {
+  margin-left: 20px;
+}
+
+.VerseDetails {
+  font-size: 18px;
+}

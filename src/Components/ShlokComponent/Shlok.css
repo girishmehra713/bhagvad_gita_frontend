@@ -1,0 +1,37 @@
+.ShlokContentSection {
+  width: 95%;
+  margin: 20px auto;
+  background: url(https://pedantic-easley-9a534c.netlify.app/nextimg/%2Fquotes-bg.png/1920/75?url=%2Fquotes-bg.png&w=1920&q=75) center no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 50px;
+  border-radius: 15px;
+  color: white;
+}
+
+.aboutShlok {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+
+}
+
+.shlokPara {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+
+}
+
+.shlokParagraph {
+
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.secShlokPara {
+  margin-top: 30px;
+}

@@ -1,38 +1,252 @@
-.App {
-  text-align: center;
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.349);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo_text {
+  font-family: 'Lobster', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+}
+
+.nav_item_link {
+  margin: 0px 20px;
+}
+
+.nav_item_link a {
+  font-family: 'Roboto', sans-serif;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(117, 116, 116);
+  padding: 5px 5px;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+}
+
+.nav_item_link a:hover {
+
+  border-bottom: 2px solid chocolate;
+  opacity: 1;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  background-color: white;
+  border: 1px solid grey;
+  padding: 5px 20px;
+}
+
+.searchBar:hover,
+.searchBar:focus {
+  border-color: chocolate;
+}
+
+.searchicon {
+  margin-right: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.searchinput {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.contentSection {
+  width: 95%;
+  margin: 20px auto;
+  background: url(https://pedantic-easley-9a534c.netlify.app/nextimg/%2Fbanner2.png/1920/75?url=%2Fbanner2.png&w=1920&q=75) center no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 100px 50px;
+  border-radius: 15px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contentShlok {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.readMore {
+  padding: 10px 20px;
+  color: chocolate;
+  background-color: white;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.readMore:hover,
+.readMore:focus {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.349);
+  color: chocolate;
+}
+
+
+.chapterSection {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.headerChapter {
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding: 20px 5px;
+}
+
+.cardChapterSection {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+
+}
+
+.Chapter {
+  width: 605px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.349);
+  padding: 15px 25px;
+  cursor: pointer;
+  margin: 20px 20px;
+  text-overflow: ellipsis;
+}
+
+.Chapter:hover {
+  background-color: #FFFAEC;
+  box-shadow: 0px 2px 10px #ffdcbb;
+
+}
+
+.chapterNumber {
+  color: chocolate;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+.chapterTitle {
+  font-size: 20px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+.chapterContent {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 400;
+  opacity: 0.7;
+  text-justify: auto;
+  max-width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.verseNumber {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 10px 10px 10px;
+  padding: 20px 10px;
+  border-top: 1px solid rgb(225, 223, 223);
+}
+
+.footerLinks {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px 10px;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 2px solid rgb(170, 167, 167); */
+}
+
+.footerLinks a {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.6;
+  font-family: sans-serif;
+  color: black;
+  margin-right: 20px;
+  font-weight: 700;
+}
+
+.socialAccounts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 30px 0px;
+  font-size: 18px;
+}
+
+.socialLogo {
+  font-weight: 500;
+  opacity: 0.6;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.love {
+  border-top: 1px solid rgb(225, 223, 223);
+  text-align: center;
+  padding: 20px 0px 0px;
+  font-weight: 700;
+}
+
+.heart {
+  color: red;
+}
+
+.nav_item_link a.active {
+  font-weight: 800;
+  border-bottom: 2px solid transparent;
 }

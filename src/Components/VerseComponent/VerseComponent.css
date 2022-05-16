@@ -1,0 +1,65 @@
+.VerseMain {
+  text-align: center;
+  padding: 50px;
+}
+
+.verseHead {
+  font-weight: 700;
+}
+
+.VerseMainText {
+  margin: 30px 0px;
+}
+
+.verseText {
+  font-size: 24px;
+  color: #F57903;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.verseMainTransl {
+  margin-bottom: 30px;
+}
+
+.verseTransl {
+  font-size: 22px;
+}
+
+.verseMainWord {
+  margin-bottom: 125px;
+}
+
+.verseWord {
+  font-size: 22px;
+}
+
+.VerseMainTranslation {
+  padding-top: 85px;
+  border-top: 1px solid rgb(201, 201, 201);
+  width: 80%;
+  margin: auto;
+}
+
+.VerseMainCommentary {
+  width: 80%;
+  margin: auto;
+}
+
+.verseTransHead {
+  font-weight: 700;
+}
+
+.verseTransPara {
+  font-size: 22px;
+  padding: 30px 0px;
+}
+
+.verseCommHead {
+  font-weight: 700;
+}
+
+.verseCommPara {
+  font-size: 22px;
+  padding: 30px 0px;
+}
