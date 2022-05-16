@@ -56,7 +56,7 @@ const ChapterSummaryWithVerses = (props) => {
       <div className='VerseSection'>
         <VerseHeader numberofVerses={myChapter[0]?.verses_count} />
         {allverses.map((element) =>
-          <VersesSection key={element.id} number={element.verse_number} verseContent={element.transliteration} />
+          <VersesSection key={element.id} chapNum={Chapnumber} number={element.verse_number} verseContent={element.transliteration} />
         )}
       </div>
     </>

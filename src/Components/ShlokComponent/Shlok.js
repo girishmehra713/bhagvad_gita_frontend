@@ -1,12 +1,11 @@
 import React from 'react'
-import Footer from '../Footer'
-import Navbar from '../Navbar'
+
 import './Shlok.css'
 
 export default function Shlok() {
   return (
     <>
-      
+
       <div className='ShlokContentSection'>
         <h1 className='aboutShlok'>Bhagavad Geeta Quotes By Shri Krishna</h1>
       </div>
@@ -87,7 +86,7 @@ export default function Shlok() {
           25. I give you these precious words of wisdom; reflect on them and then do as you choose.
         </p>
       </div>
-      
+
     </>
   )
 }

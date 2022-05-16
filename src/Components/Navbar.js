@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className='Navbar'>
       <div className='nav_logo'>
-        <NavLink to='/' style={{ textDecoration: 'none', color: 'black' }}><h2 className='logo_text'>Bhagavad Geeta</h2></NavLink>
+        <NavLink to='/' style={{ textDecoration: 'none', color: 'black' }}><h2 className='logo_text'>Bhagavad Gita</h2></NavLink>
       </div>
       <div className='navlinks'>
         <div className='nav_item_link'>
@@ -16,12 +16,12 @@ const Navbar = () => {
         </div>
 
         <div className='nav_item_link'>
-          <NavLink to='/About' className={(navData) => (navData.isActive ? 'active' : '')}>About Geeta</NavLink>
+          <NavLink to='/About' className={(navData) => (navData.isActive ? 'active' : '')}>About Gita</NavLink>
         </div>
       </div>
       <div className='searchBar'>
         <i className='fa fa-search searchicon'></i>
-        <input type='text' placeholder='Search Geeta Chapters' className='searchinput'></input>
+        <input type='text' placeholder='Search Gita Chapters' className='searchinput'></input>
       </div>
     </nav>
   )

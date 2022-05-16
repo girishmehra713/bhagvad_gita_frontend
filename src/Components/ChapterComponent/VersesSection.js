@@ -1,10 +1,15 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './ChapterCss/ChapterSummary.css';
 export default function VersesSection(props) {
-  const { number, verseContent } = props;
+  const { chapNum, number, verseContent } = props;
+  const history = useNavigate();
+  const goToVersePage = () => {
+    history(`/Chapters/${chapNum}/verse/${number}`);
+  }
   return (
 
-    <div className='verseNumberandDetails'>
+    <div onClick={goToVersePage} className='verseNumberandDetails'>
       <div className='verseNumber'>
         <span>VERSE</span>
         <span className='verseId'>{number}</span>
