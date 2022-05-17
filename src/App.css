@@ -250,3 +250,78 @@ body {
   font-weight: 800;
   border-bottom: 2px solid transparent;
 }
+
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: black;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 32px;
+  float: left;
+  line-height: 70px;
+  display: none;
+}
+
+.my-button:focus {
+  outline: none;
+}
+
+@media(max-width:800px) {
+  .Navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Navbar.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: block;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .nav_item_link {
+    margin: 10px 0px;
+  }
+}
+
+@media(max-width:600px) {
+  .Navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .Navbar.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: block;
+  }
+
+  .navlinks {
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .nav_item_link {
+    margin: 10px 0px;
+  }
+
+  .VerseHeader {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .VerseSpan {
+    margin-bottom: 10px;
+  }
+}

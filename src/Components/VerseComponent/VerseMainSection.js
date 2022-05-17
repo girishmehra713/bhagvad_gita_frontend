@@ -23,7 +23,8 @@ export default function VerseMainSection() {
     getVerseDetails();
   }, [])
 
-
+  const myArr = data.translations;
+  console.log("myArr = ", myArr);
 
   return (
     <>
@@ -41,23 +42,24 @@ export default function VerseMainSection() {
           <p className='verseWord'>{data.word_meanings}</p>
         </div>
 
-        {/* <div className='VerseMainTranslation'>
+        <div className='VerseMainTranslation'>
           <h1 className='verseTransHead'>Translation</h1>
           <div className='verseTrans'>
             <p className='verseTransPara'>
-              {data.translations.length >= 1 ? data.translations[0] : "Not Avaialable"}
+              {data.translations === undefined ? "Not Avaialable" : data.translations[0].description}
             </p>
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className='VerseMainCommentary'>
+        <div className='VerseMainCommentary'>
           <h1 className='verseCommHead'>Commentary</h1>
           <div className='verseComm'>
             <p className='verseCommPara'>
-              {data.commentaries[0]?.description}
+              {data.commentaries === undefined ? "Not Avaialable" : data.commentaries[0].description}
+              <br /><b>By ~ {data.commentaries === undefined ? "Not Avaialable" : data.commentaries[0].author_name}</b>
             </p>
           </div>
-        </div> */}
+        </div>
 
 
       </section>
